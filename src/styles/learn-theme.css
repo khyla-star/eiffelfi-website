@@ -1,0 +1,57 @@
+.learn-page {
+  --body-bg: rgb(255, 255, 255);
+  --body-image: none;
+  --body-bg-rgb: 255, 255, 255;
+  --body-border: rgb(230, 230, 230);
+  --body-primary-color: #1a1a1a;
+  --body-secondary-color: #737373;
+  --body-reaction-bg: rgb(242, 242, 242);
+  --body-reaction-text-color: rgb(64, 64, 64);
+  --body-toc-active-border: #737373;
+  --body-toc-inactive-border: #f2f2f2;
+  --body-toc-inactive-color: #737373;
+  --body-toc-active-font-weight: 400;
+  --body-table-border: rgb(204, 204, 204);
+  --body-color: hsl(0, 0%, 0%);
+  --footer-bg: rgb(255, 255, 255);
+  --footer-image: none;
+  --footer-border: rgb(230, 230, 230);
+  --footer-color: hsl(211, 10%, 61%);
+  --header-bg: rgb(77, 63, 237);
+  --header-image: url(https://downloads.intercomcdn.com/i/o/329153/a66552f2ac23f104f395f31f/23ae49e1c55beea8a801f49ab7f5aa16.png);
+  --header-color: hsl(0, 0%, 100%);
+  --collection-card-bg: rgb(255, 255, 255);
+  --collection-card-image: none;
+  --collection-card-color: hsl(245, 83%, 59%);
+  --card-bg: rgb(255, 255, 255);
+  --card-border-color: rgb(230, 230, 230);
+  --card-border-inner-radius: 6px;
+  --card-border-radius: 8px;
+  --card-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --search-bar-border-radius: 10px;
+  --search-bar-width: 100%;
+  --header-height: 245px;
+  --header-subheader-background-color: #000000;
+  --header-subheader-font-color: #ffffff;
+  --content-block-bg: rgb(255, 255, 255);
+  --content-block-image: none;
+  --content-block-color: hsl(0, 0%, 10%);
+  --content-block-button-bg: rgb(51, 75, 250);
+  --content-block-button-image: none;
+  --content-block-button-color: hsl(0, 0%, 100%);
+  --content-block-button-radius: 6px;
+  --content-block-margin: 0;
+  --content-block-width: auto;
+  --primary-color: hsl(245, 83%, 59%);
+  --primary-color-alpha-10: hsla(245, 83%, 59%, 0.1);
+  --primary-color-alpha-60: hsla(245, 83%, 59%, 0.6);
+  --text-on-primary-color: #ffffff;
+  --font-family-primary: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-family-secondary: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.learn-page {
+  min-height: 100%;
+  background: var(--body-bg);
+  color: var(--body-primary-color);
+}

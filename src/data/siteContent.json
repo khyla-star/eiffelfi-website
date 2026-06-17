@@ -1,0 +1,722 @@
+{
+  "navigation": {
+    "primary": [
+      {
+        "label": "Invest",
+        "to": "/marketplace",
+        "external": false
+      },
+      {
+        "label": "About",
+        "to": "/team",
+        "external": false
+      },
+      {
+        "label": "Learn",
+        "to": "/help",
+        "external": false
+      }
+    ],
+    "auth": {
+      "login": {
+        "label": "Log In",
+        "to": "/login"
+      },
+      "signup": {
+        "label": "Sign Up",
+        "to": "/signup"
+      }
+    },
+    "logo": {
+      "light": "/assets/logo-light.ff9fcbf0916e664961e966b23ce0dcc5.svg",
+      "dark": "/assets/logo-dark.26f6d49d3601bfad47d27f20d1ff4d10.svg"
+    }
+  },
+  "hero": {
+    "title": "Own Global Real Estate Without Borders",
+    "description": "Invest in tokenized properties worldwide. Earn real-world income, access fractional ownership, and participate in a transparent, blockchain-powered real estate ecosystem.",
+    "stats": [
+      {
+        "label": "Total InvestedTotal Invested",
+        "value": "$100M+"
+      },
+      {
+        "label": "Distributed to InvestorsDistributed to Investors",
+        "value": "$5.2M+"
+      },
+      {
+        "label": "Google ReviewsGoogle Reviews",
+        "value": "4.7★"
+      }
+    ],
+    "cta": {
+      "label": "Join 40K+ investors→",
+      "to": "/signup"
+    },
+    "card": {
+      "image": "/assets/hero-hearn.webp",
+      "investors": "354 investors",
+      "lastPrice": "$35.59",
+      "change": "+-18.39%"
+    }
+  },
+  "marketplaceTicker": [
+    {
+      "image": "/assets/01JNHDTTMXFWQE9REWKZAGB31N.webp",
+      "address": "4506 S Fallwood Ct",
+      "price": "$46.23",
+      "change": "2.80%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01HNBH7296QQBD7B82T3JZR28E.webp",
+      "address": "88 Madison Ave",
+      "price": "$44.89",
+      "change": "6.28%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01JV7RY5VJEHF602CNETHWWYK5.webp",
+      "address": "395 Main St",
+      "price": "$50.23",
+      "change": "5.37%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01HJ4SBCPAHZSWA5BND1BPJEQD.webp",
+      "address": "13596 SW Mapleview Ln",
+      "price": "$52.30",
+      "change": "6.04%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01HHD3FBQG2AVZME94691Q3SAA.webp",
+      "address": "10828 Pluton St",
+      "price": "$48.66",
+      "change": "6.32%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01HR8AFDW2ZKYYDY11C6W9EXCP.webp",
+      "address": "1821 Donetto Dr",
+      "price": "$46.48",
+      "change": "8.69%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01HZ07SGC8DX86JP3J1YPDAVBV.webp",
+      "address": "3761 Jade Ave",
+      "price": "$48.24",
+      "change": "2.89%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01G4BN294GEY4CJQPQM2RBNZF3.webp",
+      "address": "3427 Sturdevant St",
+      "price": "$47.77",
+      "change": "4.95%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01HYEXCSE5FHDHF7R4BYB8S5D7.webp",
+      "address": "581 San Francisco St",
+      "price": "$42.53",
+      "change": "3.32%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01HTX66S56GX0KF2WZ242MSMHV.webp",
+      "address": "20 Sederholm Path",
+      "price": "$34.86",
+      "change": "39.66%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01HZJNXHYCEM8D9W7WV0GSVN5J.webp",
+      "address": "14018 Arcadia Road NE",
+      "price": "$40.32",
+      "change": "3.19%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01JHGQ144BTMJ3HA9KKSMSQZAQ.webp",
+      "address": "1048 Hilton Rd",
+      "price": "$48.24",
+      "change": "5.63%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01J59MH171MVAG2JQ5TV4R71N9.webp",
+      "address": "516 E 2nd St",
+      "price": "$70.84",
+      "change": "7.15%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01HTN89YBAQH34YBS3JGBHQSRW.webp",
+      "address": "6117 Hyde Flats Road 21",
+      "price": "$50.15",
+      "change": "5.21%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01J6QKKS41DXTN5RT417C70107.webp",
+      "address": "5333 Ponte Tresa Dr",
+      "price": "$48.17",
+      "change": "2.04%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01J8BVXH2ADM8BHDNN9CDT24AD.webp",
+      "address": "1415 Race St",
+      "price": "$53.01",
+      "change": "2.28%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01H96DJW4C4W4T793F2Q41B99V.webp",
+      "address": "8202 Laurel Ave",
+      "price": "$35.98",
+      "change": "0.70%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01J01Q04X879SEB7FR3YQ83YEA.webp",
+      "address": "503 Colorado Street Unit 4",
+      "price": "$41.59",
+      "change": "1.02%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01GE0D3BB1JQNXNS81G66K00H4.webp",
+      "address": "110 Gardengate Dr",
+      "price": "$34.70",
+      "change": "9.30%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/001.webp",
+      "address": "333 Illinois Ave",
+      "price": "$34.76",
+      "change": "4.22%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01JH1ES0EAS9HEA166K877GT2V.webp",
+      "address": "2221 E Chase St",
+      "price": "$66.29",
+      "change": "11.27%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01JQPVSD6ZD26H6SXK9XHDARFD.webp",
+      "address": "2305 N 156th Pl",
+      "price": "$52.77",
+      "change": "5.72%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01J5HB0GHMMW5CTDE4C1T7QDWS.webp",
+      "address": "1190 Ridgetop Ave",
+      "price": "$49.00",
+      "change": "0.47%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01JVDFAKB4ZNAHG8H67H91T0NP.webp",
+      "address": "51 St Clair St",
+      "price": "$38.29",
+      "change": "0.00%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01JY2PCS5YKJ0GMQT7PH8VHSGV.webp",
+      "address": "11604 D K Ranch Rd",
+      "price": "$34.62",
+      "change": "4.12%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01JVN4Q9ZWF4YX5AJ4PNZJ6EW2.webp",
+      "address": "217 W Stone St",
+      "price": "$57.41",
+      "change": "0.02%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01G8CJ3ABPV42561NSRBKRBNE4.webp",
+      "address": "142 13th St",
+      "price": "$27.15",
+      "change": "5.58%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01JVT8TWDAHX311XPCPXYVYPM6.webp",
+      "address": "172 OH-53",
+      "price": "$51.06",
+      "change": "4.62%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01GHCHX3K5AS9RM0P1NRTM0QHG.webp",
+      "address": "323 E 9th St",
+      "price": "$31.44",
+      "change": "4.44%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01HXADFCEXQ6455Y6T59ZEDPVJ.webp",
+      "address": "800 Embassy Drive Unit 202",
+      "price": "$44.12",
+      "change": "3.16%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01HXW96S1VCB8PWBSBYWTGV8RP.webp",
+      "address": "90 Madison Ave",
+      "price": "$41.37",
+      "change": "3.50%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01JWW85HYSPNRR21GKRFCJWHPP.webp",
+      "address": "62 Liberty St",
+      "price": "$37.55",
+      "change": "0.00%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01JHKE6D9NG1Y2VH1G22JB7HSW.webp",
+      "address": "222 57th St",
+      "price": "$50.03",
+      "change": "3.22%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01HRYTZWY4JWA19D78A8S29KQ8.webp",
+      "address": "29172 Oakwood St",
+      "price": "$32.04",
+      "change": "4.17%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01FZVD00RYMSKHHVQ3DPJ0S89T.webp",
+      "address": "723 12th St",
+      "price": "$35.99",
+      "change": "4.60%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01JD3FGGFHHBZR3FS15Q5812TV.webp",
+      "address": "326-332 S Alcott St",
+      "price": "$48.10",
+      "change": "4.23%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01J9PQ6Z3SCCS7NJPJA1ZGFSP3.webp",
+      "address": "25 Rocky Ridge Rd",
+      "price": "$47.16",
+      "change": "3.28%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01JJCNB62N61VN4XFY9YD1E6S9.webp",
+      "address": "9901 E Evans Ave Unit 4C",
+      "price": "$39.71",
+      "change": "4.03%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01K3H866PNWPTHWW2Q6N3AFY7B.webp",
+      "address": "84 Madison Ave",
+      "price": "$47.27",
+      "change": "0.00%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01HACY2QFHCCWY1KRC964CF93X.webp",
+      "address": "12615 Jackson Ave",
+      "price": "$52.51",
+      "change": "5.65%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/001(1).webp",
+      "address": "7542 and 7656 S Colfax Ave",
+      "price": "$26.53",
+      "change": "3.33%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/002.webp",
+      "address": "428 Cross St",
+      "price": "$22.91",
+      "change": "4.46%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01HJ71FRFVVYY8ZM2W1PJ9RWRN.webp",
+      "address": "1432 Sara Ave",
+      "price": "$17.04",
+      "change": "0.35%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/001(2).webp",
+      "address": "Ohio 3 Property Package",
+      "price": "$20.57",
+      "change": "2.53%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/001(3).webp",
+      "address": "755 Robinwood Dr",
+      "price": "$38.59",
+      "change": "1.05%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01HSYEG8SDBWBE5N82JVQJTSWZ.webp",
+      "address": "Universal Lending DAO (ULD)",
+      "price": "$46.69",
+      "change": "11.11%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01HKTFW65XMYYG22TGANG3BYFE.webp",
+      "address": "1456 W 85th St",
+      "price": "$22.09",
+      "change": "6.98%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/01K0SZTEFJXH7A9KKW2CBFC4QQ.webp",
+      "address": "Earl DAO",
+      "price": "$48.54",
+      "change": "4410.00%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01H4E53CEFRXT9J1BFXHGAMMTX.webp",
+      "address": "542 Sumner St",
+      "price": "$25.75",
+      "change": "2.93%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01H4M4AV6QET01YN1SQ4NQNNS6.webp",
+      "address": "3038-3040 Sinclair St",
+      "price": "$20.73",
+      "change": "5.27%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/001(4).webp",
+      "address": "9583 Pagewood Ave",
+      "price": "$36.57",
+      "change": "114.87%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/001(5).webp",
+      "address": "3514 W 123rd St",
+      "price": "$46.97",
+      "change": "73.00%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01G5T913N7RT8T3M7CYP4DV5VZ.webp",
+      "address": "615 Rose Ln",
+      "price": "$34.52",
+      "change": "2.28%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/001(6).webp",
+      "address": "917 Pawnee Ave",
+      "price": "$47.69",
+      "change": "16.04%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/001(7).webp",
+      "address": "25 Circle Dr",
+      "price": "$21.50",
+      "change": "5.65%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01G50ECWKNR4TGRWNGRN5V7NTX.webp",
+      "address": "1106 29th Ave",
+      "price": "$38.79",
+      "change": "2.87%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/001(8).webp",
+      "address": "2094 W 34th Place",
+      "price": "$12.72",
+      "change": "11.92%",
+      "direction": "up"
+    },
+    {
+      "image": "/assets/01JFQWYKP2X27K1M19VXK78E7K.webp",
+      "address": "3178 W 41st St",
+      "price": "$18.65",
+      "change": "6.29%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/001(9).webp",
+      "address": "4312 E 162nd St",
+      "price": "$23.30",
+      "change": "5.39%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/001(10).webp",
+      "address": "3976 Stillwood Dr",
+      "price": "$27.07",
+      "change": "7.44%",
+      "direction": "down"
+    },
+    {
+      "image": "/assets/001(11).webp",
+      "address": "5630 Morgan Ford Rd",
+      "price": "$35.93",
+      "change": "0.11%",
+      "direction": "up"
+    }
+  ],
+  "pressLogos": [
+    {
+      "src": "/assets/financial-times.931fb46d79a471e457c2.png",
+      "alt": "Financial Times press logo"
+    },
+    {
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAATCAMAAABr5yUpAAAAh1BMVEVMaXGjo6OlpaWlpaWlpaVzc3OkpKSjo6Ompqajo6OlpaWkpKSkpKSjo6OkpKQCAgICAgIBAQEBAQECAgIBAQGlpaWkpKSlpaUBAQEBAQEBAQEBAQEAAAABAQEBAQEBAQGmpqYDAwMCAgIBAQEBAQEBAQEBAQG5ubmsrKyzs7Ovr6+mpqYBAQG/+Wy6AAAAJ3RSTlMAWbquQAOGHX5sxy/8DGAbTWJEDW+iUuqT+f3lgP7yudcsN9Kgyd7LdQrIAAAC4klEQVRIx72VW7eiOBCFt0gBchHlqggiCJJU6v//vnmA4+Wcnml71rL3U9hA8qWqkgJW1vpVlg0C4Dz5Lj4qb1KvmjYgEHx9dzgAfRSBw1epGcFSD+vzCOZZId8RFsOY3yDQ9+E7wE/fePNu59WWKET0qyi4waLox3TbBZIQ7/ZJ+tbe4yy+1wIzswqNMaFiZv6qhYnvCkAg5NoopcwcFFqWJCIUpS5mgw5HqeSUgIiIltdEBMzPBGBx6uYcL7PYjuM4nq9CE6q15/xSLgBCPrEJjeJv1UnwtLFBAOEglUglp/j3aWjlHL/OwqEJeTvvdmJmbf/IqL0tLso4xTay134eAHAdy9oQPDZO7m8I3bFpsv4qskc91PVYox4yJMOhQzbUWdv2IPTD2CZAK+e6bXf/gsChCdVPBBAsNjawUnqaygDuRU/TlMPjUE88bZCJtEBy6AhXqY4y4CQjapEdrlJJI+cYyVGaSvZopZJGjt0fIRDBUsZGdNF54E85HG3yNXvw2Ph5qCwcROolv6NU42n/hZBglGq4iuwxyrG+nndoRYZWJPvjKChjIzDK8nx9gcVlFAWAx6pAyf6CgBnhlKZpeke4ygk7kT2dpUXXAa0c016k/l8ItgmNNmEZ+fpC88/KRsn+kog4S4FRrgT8REjPMoDmcky7/0Iwxrcecr9OvaWMDbdkh1zbxZrDwM3dRxS6qqmyrpVb8oVwkxsOzwg4yRVJjTcQ5juCmflxChcEWLrMrTLAVpvLZfIfCBikaqpGjv2CgFGOt2PzQMgwSHU9yeGdKDy3jQeCZhtwL3rSagPkSutwBW/SBcrJB9JBmkpOyZIIwl6a6lw9I8SjVHLr3kF4NI2nHhHYdgRCVGxWLgAEm60LuLYdwbYDAOj22S4FoU96AECfJV2SpOiTHmmSxEC6y3Yp0CUJzcYDIQzVgqC+9c5Pd8oFYWLm6el2fNFfQACCVVEUc3Dn8YuiTy79D8ondMuaPCSFAAAAAElFTkSuQmCC",
+      "alt": "TechCrunch press logo"
+    },
+    {
+      "src": "/assets/cnbc.991dec5d506288b3a5c5.png",
+      "alt": "CNBC press logo"
+    },
+    {
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAApCAMAAADOBgHiAAAAM1BMVEVMaXEQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBCxmBRBAAAAEHRSTlMASFcpGIh3BDlr1PTlnKq8R4aL4wAABLhJREFUWMPdmMsW7KgKhlFRvKD+7/+0PfASU5XU3metM+jVGVlo4RcEhJCx1lprHK2HreU9cpfU+7AmiOSauv5JzhoZo2jXI2syBu/TsZiT98EIEWUAAEq2c8oCloRIKAJ+CpMCADSszYA6WKgGkjWE8hg1rGe9Th/b9AURytCYiDJQSgEA+4AQhkYLQFUxt7gjINETQimllDIRJAMla5kaiQIAzQqoUEaOMcZQlvpvBBKFWiE2/RFhrbohqHUxxhhl7dhYyIVpR1aoWRozOhEReSC+Ibh9IuYRYcx+IPB17MdvHpts1RSZMrKQCFnAvCIUeCIhuRzvjgD/jeCGkvO3yNIwVE+NywoV5ddBlCREF8MNQRUD8d0KAeiRLg08jnb8zsjGGNu2rR8QKADINdKzFbJRoH4glNx779nsLYF+BfVNY17R0+kdgfxYYp+tIE6BSk9BmeZ7xwwAWjfEoTGj6Ii39AOBYtV15t8ITIPhZoVWW6ttW05SLgDyTk6mLY0Z2bHj2H9ExMyPHXPqG4GcAv7NFyZErAp0OfJjB2C2OzpFIxkIaSCY662H3ySgPVtByClQPiLiioCpwGWUeAoCUFdQiiyWOFyLhBJW4iMSEiHK6yW+rDAYvhGEbhosYHakipBk9MsKZVqBFeqmpxY3LTY1vSNMhreDsPPd00TgldQVnTJydC7avL3XA9kwx7ajhNGtY3YV8C++QCTk8i1Bx52ghSq8YWarc8XS2IAwr6mCy1EkA9BcsKxBDKDkXF6uqSkUYi1XRBw35UihmhXLwS+NWUjn0iNkuc5M4VYyS3lL3hFIyPWvy3r8w7Xrbr5rZKJojDHGxNvRueR9iLeAukvE7CLHmSjb43iqmVqNWTUMORt8MHxoDB97/AufM6LfJP+zSvk/a/yPPvJnw9xT7mlJEfmYXKLfi/51jwlpBfgRoXzEK9uUjriKIbg9TCmlj9khSsGsuBwS614R+qoeiZrdkW53dc+jZNDmrqpj1c4eHxlOKOzs1K5iaDQTjV8RitnD9IVwtQJ1Jk1/VlWzbVhZXShNUZl5lMiiFFUtt6Lh1QqrUjgQEtBYxCV9RIAVZrZtMggFIAkz88qYsxgS148i4BWhX73BRNilyW4FPhGmtI7bQyjsE6QTYZQD7a8Q0FaRsRBKvEfuHcHMviFD3Q8EEeK8a+VfB6Ed6HwehAU08dlMPCCsrUUoAIGdc87JhxUi/sIKDcoNyExHRHQA2o5e4AmByABhIpRSipZ+ICR2fFRHvxGEPKDxQBCvAJDTb4Q4W6sdlJk/ghLIfxMRKkQeKM4cR8qpF9z2/Y3gozHmKicWQq5Mf4lAAdB69yrnyypqX3whAWkexLc7eudvzckfEcie3z5mIxx2P/OM0EbkHOvuQdm+5D8RyBSUiTAcWyiepfb3QdhRd78jSEdxLwwPCEKmLCv4bISIpAHxCSEObylDy3temI2K/OGO2FYQijpTkwdyq1WvHvyO0FtrXTGTr1AaotZ6uluBXHkLiVt2LLKL4hmFcX0G6Muf68NNifnl7rwpPz4bCNm3iyq0uq5hG9JRmMddUNRavbkM25rZw1prrdVf3xnNFNW2rBDb6vWPfxL9AwYOW4AbR7k9AAAAAElFTkSuQmCC",
+      "alt": "Business Insider press logo"
+    },
+    {
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAAiBAMAAABhMRwgAAAAKlBMVEVMaXFZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVk/hK28AAAADXRSTlMABSwYXKpG0niWv+X6+zjX5QAABEdJREFUSMeF1c+LU1cUB/Dvza8mru4bwSlZpeMPhHEgHcQU00JaM7SLBkapFsFAEBWmdMDBWXQTmFanRWxAurHWBtJSaDsS0NGCLc1GrYVyz6bJ+GLe+f4vXbxnEjWdOavHfZfPO+9y7jmYmhmLPCbE7n0nLbaJZY7FyqvvD1y9TX9b4a1b6pxzdFQnl155He+Qzse2Ea+Tslouf9DWCYJZ+lN0B8FWhNICkOhMEIDGjgLeIaXlwcMsJwh2jjsKRYY5mMQkAUXdUciSsmgBoH0JMJ43PAPAGFt8KYfRhuFTViPBVjbNcKM3noPdPodkJFgUNrFnfeP0sfALR67WcH7jxLSqb/aV30PITK1vnK4BAFLrG79eyY8LQCz3ep3C4AQwde474dpRsjet9K+R+g0AIFGncFADkGqT5F92JKSOA7E2789XRUv2e5JyrOPk3rSSpFJLAOJVPj4s0gPQ0MHZ89QcgEwoJLvArGoJu1R6WKoLZUEpiwVl8OWSUHoGKKisoeFYQ4KyAjSGwnXPFruI190AXozKGopKnqFKraDqAx9SNWfRdr61syp3MauyZm1mJADVLpKqfQNURS6aXUrSiW8Lqr71MkppmbRq32BatY+GsATE3XPhxIUFdrEsfBKWec9kSD44u/QAWVUfiAn1XxSVD2GSqgNURa4b2GYkkKR00RTeA+wydctklFIC9kYC2qJ9VISPjJdUBrm28DEM9ucj4Y+f6+zGO5Q7AGZV/XyalJw1QFbVN0BDdGCqIq0w6VpbyFNRRYUneVi6MZIXARRUtZYmJReWrPoGWBYGpkP+fvPkx+qk1BRST1kzFCwq3ZRSLgKYVkoprZFQCIU50WBq1M3WPiUpXLUY1cN0NxFd0uxkgcERkqvlcrlcLucyKqTwx7GqznTT/ytgJLSeX6emCumC3EiIv5uI/iKrZO0FwYZCjJS7nud5ngebaFNIWRy/WSkNT/JVAcCycBAn+Wh4p/fcopAPo6RbABAjeQdAQRnkXhYaos9Mh+yFLcS8YRC/ptRedPQtADD1kCyqDkyalNqYUKU+RVN0KwRiT2EQr0sokBKOmmZY1YeoPZPRFwTToaygIsqaBWBSWwir92nUae8BgD2k2jewFZG7yJBSGgomRUrJZpWyCeMBMa1Z4G3KQ8Auk3wS1Zb6FmgKSyaplLWwlaufR1J1C0hRNCgBWJjiioGdo/wAoErqs/Dv6iIlLy7uGfCakovRMAjythKOxIZSBlfOfTWI6cACVWUNOOicc+4LAECBsomjyuvA1865+2GvdkE+0ZFBHkCaToXk8ZjKZzOfqPSBuajQ+wZA/AyDb+tchW2SJP+uWRRJPd1m8DkA4H3SOT5ArEM6YVAC9t8M46Owg98QBj9ZYD1czQF71m+T/O1yNKcXOtRfcsDBGx3yn8sTJvn82b0vz5fdMxdm8ni+On9grzUA4vMzM2/C4j9TzPTbSkYP6gAAAABJRU5ErkJggg==",
+      "alt": "Forbes press logo"
+    },
+    {
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAAlCAMAAAC5xMGZAAAAWlBMVEVMaXFwcHBwcHBwcHBwcHBwcHAtLS1wcHBNTU1wcHBwcHBwcHBwcHBwcHAfHx8fHx8fHx8fHx8fHx8gICAgICAfHx8gICBwcHAfHx8fHx8fHx8gICBxcXEfHx+Por13AAAAHHRSTlMAb+z7tMMFQxiN3F6h0U7l12PIep28ioE79KsqeIgbCQAAA6VJREFUWMPFmNmS6jgQRBMMZbHZ2vGi/P/fnAfJsk1z7/TEREC9tAUOcVSVlZIa+Lc4pGOO5oQvxTktcYB8haAtv9+kRn0pCZfUFIRv1UGuNQu3LyG0VQnHb9XhXutw/xKBOlaE9sMKWB5uleD6kYa8XB85rrf2kCt/qgiXzCZSUTaPf42u1+aXjnKryru2TXoAgGrqZ7kOnbXalfe9Dr9KqCHjLxHOqcmRDs/UpBaCQ03CuU5HDvl9y1F+ieB+h7CuuGmvpQPOFeFQpxsZFoRegKUayx/ZjQAsCPIiszdUz9UG25RSuqqNOWdTKFlgB6kILwL5OVqzIK/qeR0/KsLtnprUpNsPcxYY0o/UUrMgxgdrbZhc1m/ng7VhcgIAykzBBk06YI5TsNYGX8qIIU7BhmmK72ywPaYmNemE60q1InS+rCoj9CxhFQC/jBQEQ/lupAPc8g0NAKhpGfZvtqP7LTUpNen8w5wzgho5zjULPkRjjNNkBAzZR2OcnwSYR9JG5wLpgM5GZ4yZRvYKEEv23rk4Ur/bjk4Z4XB5NeeMgEj6rRYAYCADMNV2ARDyay8dEcgOcKSeAcwbhI0Nts2mL3bmXBBUTw6Q0hGln0ZqwJNOSl/MpJadHAEAkeygNDlAZIewbkeXZ07CaaV6yA4BhrQ1C0OcgrZhpAYMSe3NsCgXsvqCMj5YG3rSYF4kvUFQx9UG7xnhtlI9sUMQWNIUhFhlpqscR9sBkXSrNVVtkjSlbHuE1QYfpSbH9vhizhuEjuyVZZ+fXNcNXZ/nGqIes3XsEcSSk+m6wf8J4bRZsTqm1KT7iznvEDCRMbAXTGQHANDU2fFEGU1OcLtC1B81fyjEfju6p6ZJtxdz3iPMI8eevSBwVBARpctcAmAmAwayV0WOER3pIHlkIJbs9nJ87lbcbvpid2KrCJIl0At8sZqcBaUEgDhyAgIZ1NKUM2mlZuFNUz42KxbINaXLs+6bJ/zMAlTPsWhh9KYzrqcG/Bi895Zkl61JR2emRQvWma6bSANIIMcpxokFYbXBfFe4Xc9vxLhFyBvWKFvj7Tf+HAHBYDfDWW86QjYGrd/fFZS0hyV2Z8bZuLngGONM/sh77310HWCs7vteh245MPlgbfBxhkB1sbyYZxjcZEMohZDX7ej/nHfVPP+H0/6ihddjwQdPyQvCF+8KBUG9U95nEX5uRx9E0HHenVEvH780i8rmXONbF9dnVcL5W//IOVyWaL8D8A8/FIcQm7ZLQAAAAABJRU5ErkJggg==",
+      "alt": "Nasdaq press logo"
+    },
+    {
+      "src": "data:image/png;base64,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",
+      "alt": "NBC press logo"
+    }
+  ],
+  "howItWorks": {
+    "heading": "Get your first rent payment in minutes, not months",
+    "steps": []
+  },
+  "faq": {
+    "heading": "Know how EiffelFi works before you buy",
+    "items": [
+      {
+        "question": "How quickly can I start investing?",
+        "answer": "Sign up in about 2 minutes, complete verification, and start investing the same day. You’ll earn your first rent payment that day, and you can sell anytime."
+      },
+      {
+        "question": "When do investors receive rent?",
+        "answer": "Rent is distributed daily — every EiffelFi property pays into your account whenever it’s earning rent. Watch your balance grow each day, withdraw anytime, or compound it back into more property."
+      },
+      {
+        "question": "Can I sell my ownership?",
+        "answer": "Yes. List your shares on the EiffelFi marketplace and sell them to other investors instantly — no lockups, no waiting years for a fund exit. Instant liquidity is one of EiffelFi’s biggest advantages over traditional real estate."
+      },
+      {
+        "question": "Does EiffelFi manage the properties?",
+        "answer": "Investor-elected property managers handle day-to-day operations like leasing, maintenance, and tenant questions. A governance system lets owners vote on key property decisions, the same way a board would."
+      },
+      {
+        "question": "What should I review before buying?",
+        "answer": "Every EiffelFi property includes detailed financials, inspection reports, projected rental yield, local market data, and full ownership documents — everything a professional investor would want to see before committing capital."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Buy and own real estate shares. Earn daily rent. Sell anytime.",
+    "columns": [
+      {
+        "heading": "",
+        "links": [
+          {
+            "label": "Start investing→",
+            "to": "/signup"
+          },
+          {
+            "label": "",
+            "to": "/social/x"
+          },
+          {
+            "label": "",
+            "to": "/social/linkedin"
+          },
+          {
+            "label": "",
+            "to": "/social/facebook"
+          }
+        ]
+      },
+      {
+        "heading": "Invest",
+        "links": [
+          {
+            "label": "Invest",
+            "to": "/marketplace"
+          },
+          {
+            "label": "Lending",
+            "to": "/amm"
+          },
+          {
+            "label": "List your property",
+            "to": "/help/articles/7025226-sell-your-property-on-lofty"
+          },
+          {
+            "label": "About us",
+            "to": "/team"
+          },
+          {
+            "label": "Reviews",
+            "to": "/reviews"
+          },
+          {
+            "label": "Compare",
+            "to": "/compare"
+          },
+          {
+            "label": "Investing guides",
+            "to": "/real-estate-investing"
+          },
+          {
+            "label": "Calculators",
+            "to": "/calculators"
+          },
+          {
+            "label": "Blog",
+            "to": "/blog"
+          },
+          {
+            "label": "Help center",
+            "to": "/help"
+          },
+          {
+            "label": "Refer a friend",
+            "to": "/refer"
+          },
+          {
+            "label": "Store",
+            "to": "/merch"
+          },
+          {
+            "label": "Contact us",
+            "to": "/support"
+          },
+          {
+            "label": "Privacy Policy",
+            "to": "/privacy"
+          },
+          {
+            "label": "Terms of Service",
+            "to": "/terms"
+          }
+        ]
+      },
+      {
+        "heading": "Invest",
+        "links": [
+          {
+            "label": "Invest",
+            "to": "/marketplace"
+          },
+          {
+            "label": "Lending",
+            "to": "/amm"
+          },
+          {
+            "label": "List your property",
+            "to": "/help/articles/7025226-sell-your-property-on-lofty"
+          }
+        ]
+      },
+      {
+        "heading": "Company",
+        "links": [
+          {
+            "label": "About us",
+            "to": "/team"
+          },
+          {
+            "label": "Reviews",
+            "to": "/reviews"
+          },
+          {
+            "label": "Compare",
+            "to": "/compare"
+          }
+        ]
+      },
+      {
+        "heading": "Resources",
+        "links": [
+          {
+            "label": "Investing guides",
+            "to": "/real-estate-investing"
+          },
+          {
+            "label": "Calculators",
+            "to": "/calculators"
+          },
+          {
+            "label": "Blog",
+            "to": "/blog"
+          },
+          {
+            "label": "Help center",
+            "to": "/help"
+          },
+          {
+            "label": "Refer a friend",
+            "to": "/refer"
+          },
+          {
+            "label": "Store",
+            "to": "/merch"
+          },
+          {
+            "label": "Contact us",
+            "to": "/support"
+          }
+        ]
+      },
+      {
+        "heading": "Legal",
+        "links": [
+          {
+            "label": "Privacy Policy",
+            "to": "/privacy"
+          },
+          {
+            "label": "Terms of Service",
+            "to": "/terms"
+          }
+        ]
+      }
+    ]
+  }
+}
