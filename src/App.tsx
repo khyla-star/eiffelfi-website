@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import ScrollToTop from './components/common/ScrollToTop';
 import LandingPage from './pages/LandingPage';
 import AboutPage from './pages/AboutPage';
@@ -16,6 +16,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/team" element={<Navigate to="/about" replace />} />
         <Route path="/marketplace" element={<MarketplacePage />} />
         <Route path="/marketplace/:slug" element={<MarketplacePropertyPage />} />
         <Route path="/help" element={<LearnPage />} />

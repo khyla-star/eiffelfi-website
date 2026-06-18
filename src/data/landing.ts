@@ -86,7 +86,7 @@ export const jerryQuote = {
   eyebrow: 'EiffelFi Value',
   title: "Why Eiffelfi",
   description: "Fractional Ownership, Global Access, Blockchain Transparency, Enhanced Liquidity",
-  cta: { label: 'Meet the team', to: '/team' },
+  cta: { label: 'Meet the team', to: '/about' },
   videoImage: '/assets/maxresdefault.jpg',
   videoLabel: 'Play video: Building the NASDAQ for real estate with EiffelFi co-founder Jerry Chu',
 };
@@ -267,7 +267,7 @@ export const footer = {
   socialLabel: 'Follow us',
   links: [
     { label: 'Invest', to: '/marketplace' },
-    { label: 'About us', to: '/team' },
+    { label: 'About us', to: '/about' },
     { label: 'Learn', to: '/help' },
   ] satisfies NavLink[],
 };

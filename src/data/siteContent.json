@@ -8,7 +8,7 @@
       },
       {
         "label": "About",
-        "to": "/team",
+        "to": "/about",
         "external": false
       },
       {
@@ -589,7 +589,7 @@
           },
           {
             "label": "About us",
-            "to": "/team"
+            "to": "/about"
           },
           {
             "label": "Reviews",
@@ -659,7 +659,7 @@
         "links": [
           {
             "label": "About us",
-            "to": "/team"
+            "to": "/about"
           },
           {
             "label": "Reviews",
