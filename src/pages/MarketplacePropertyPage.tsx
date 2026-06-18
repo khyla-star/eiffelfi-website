@@ -22,7 +22,7 @@ export default function MarketplacePropertyPage() {
 
   return (
     <div className="animate-routeFadeIn">
-      <div className="app-container overflow-x-hidden bg-lofty-purple-800 text-white">
+      <div className="app-container marketplace-page overflow-x-hidden">
         <Header />
         <main className="dark pb-16">
           <div className="border-b border-white/10 px-6 py-3 sm:px-12 lg:px-16">

@@ -1,44 +1,33 @@
 import type { ReactNode } from 'react';
-import LearnHeader from './LearnHeader';
-import LearnFooter from './LearnFooter';
+import Header from '../layout/Header';
+import Footer from '../layout/Footer';
 import '../../styles/learn-theme.css';
 import '../../styles/learn.css';
 
 type LearnLayoutProps = {
   children: ReactNode;
-  searchQuery?: string;
-  onSearchChange?: (value: string) => void;
+  hero?: ReactNode;
   paddedContent?: boolean;
 };
 
-export default function LearnLayout({
-  children,
-  searchQuery = '',
-  onSearchChange,
-  paddedContent = true,
-}: LearnLayoutProps) {
+export default function LearnLayout({ children, hero, paddedContent = true }: LearnLayoutProps) {
   return (
     <div className="learn-page animate-routeFadeIn">
-      <div dir="ltr" className="h-full w-full">
-        <a
-          href="#main-content"
-          className="sr-only font-bold text-header-color focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50"
-        >
-          Skip to main content
-        </a>
+      <div className="app-container overflow-x-hidden bg-white text-lofty-purple-700">
+        <Header />
         <main>
-          <LearnHeader searchQuery={searchQuery} onSearchChange={onSearchChange} />
-          <div className="z-1 flex shrink-0 grow basis-auto justify-center px-5 sm:px-10">
+          {hero}
+          <div className="mx-auto w-full max-w-[1280px] px-6 lg:px-12">
             <section
               data-testid="main-content"
               id="main-content"
-              className={`w-240 max-w-full${paddedContent ? ' py-10' : ''}`}
+              className={paddedContent ? 'py-10' : 'pb-10 pt-6'}
             >
               {children}
             </section>
           </div>
-          <LearnFooter />
         </main>
+        <Footer />
       </div>
     </div>
   );

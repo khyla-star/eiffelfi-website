@@ -24,7 +24,7 @@ export const marketplaceProperties = [
     "slug": "2820-rucker-ave",
     "href": "https://www.lofty.ai/property_deal/2820-Rucker-Ave_Everett-WA-98201",
     "title": "2820 Rucker Ave",
-    "location": "Everett, WA 98201",
+    "location": "Paris, 75008",
     "tags": [
       "Commercial",
       "Cash Flowing"
@@ -44,7 +44,7 @@ export const marketplaceProperties = [
     "slug": "4506-s-fallwood-ct",
     "href": "https://www.lofty.ai/property_deal/4506-S-Fallwood-Ct_Columbia-MO-65203",
     "title": "4506 S Fallwood Ct",
-    "location": "Columbia, MO 65203",
+    "location": "Lyon, 69002",
     "tags": [
       "Single Family",
       "Cash Flowing",
@@ -66,7 +66,7 @@ export const marketplaceProperties = [
     "slug": "1317-south-solano-dr",
     "href": "https://www.lofty.ai/property_deal/1317-South-Solano-Dr_Las-Cruces-NM-88001",
     "title": "1317 South Solano Dr",
-    "location": "Las Cruces, NM 88001",
+    "location": "Marseille, 13008",
     "tags": [
       "Commercial"
     ],
@@ -85,7 +85,7 @@ export const marketplaceProperties = [
     "slug": "9-country-club-ln-n",
     "href": "https://www.lofty.ai/property_deal/9-Country-Club-Ln-N_Briarcliff-Manor-NY-10510",
     "title": "9 Country Club Ln N",
-    "location": "Briarcliff Manor, NY 10510",
+    "location": "Nice, 06000",
     "tags": [
       "Vacation Rental"
     ],
@@ -104,7 +104,7 @@ export const marketplaceProperties = [
     "slug": "88-madison-ave",
     "href": "https://www.lofty.ai/property_deal/88-Madison-Ave_Albany-NY-12202",
     "title": "88 Madison Ave",
-    "location": "Albany, NY 12202",
+    "location": "Bordeaux, 33000",
     "tags": [
       "Vacation Rental",
       "Cash Flowing"
@@ -124,7 +124,7 @@ export const marketplaceProperties = [
     "slug": "2208-murray-ave",
     "href": "https://www.lofty.ai/property_deal/2208-Murray-Ave_Atlantic-City-NJ-08401",
     "title": "2208 Murray Ave",
-    "location": "Atlantic City, NJ 08401",
+    "location": "Toulouse, 31000",
     "tags": [
       "Vacation Rental"
     ],
@@ -143,7 +143,7 @@ export const marketplaceProperties = [
     "slug": "5541-s-peoria-st",
     "href": "https://www.lofty.ai/property_deal/5541-S-Peoria-St_Chicago-IL-60621",
     "title": "5541 S Peoria St",
-    "location": "Chicago, IL 60621",
+    "location": "Lille, 59000",
     "tags": [
       "Multi Family",
       "Cash Flowing"
@@ -163,7 +163,7 @@ export const marketplaceProperties = [
     "slug": "395-main-st",
     "href": "https://www.lofty.ai/property_deal/395-Main-St_Tiffin-OH-44883",
     "title": "395 Main St",
-    "location": "Tiffin, OH 44883",
+    "location": "Nantes, 44000",
     "tags": [
       "Single Family",
       "Cash Flowing"
@@ -183,7 +183,7 @@ export const marketplaceProperties = [
     "slug": "12615-jackson-ave",
     "href": "https://www.lofty.ai/property_deal/12615-Jackson-Ave_Grandview-MO-64030",
     "title": "12615 Jackson Ave",
-    "location": "Grandview, MO 64030",
+    "location": "Strasbourg, 67000",
     "tags": [
       "Commercial",
       "Cash Flowing"
@@ -203,7 +203,7 @@ export const marketplaceProperties = [
     "slug": "13596-sw-mapleview-ln",
     "href": "https://www.lofty.ai/property_deal/13596-SW-Mapleview-Ln_Tigard-Oregon-97224",
     "title": "13596 SW Mapleview Ln",
-    "location": "Tigard, Oregon 97224",
+    "location": "Montpellier, 34000",
     "tags": [
       "Single Family",
       "Cash Flowing",
@@ -225,7 +225,7 @@ export const marketplaceProperties = [
     "slug": "6601-e-hearn-rd",
     "href": "https://www.lofty.ai/property_deal/6601-E-Hearn-Rd_Scottsdale-AZ-85254",
     "title": "6601 E Hearn Rd",
-    "location": "Scottsdale, AZ 85254",
+    "location": "Paris, 75008",
     "tags": [
       "Vacation Rental",
       "Cash Flowing"
@@ -245,7 +245,7 @@ export const marketplaceProperties = [
     "slug": "10828-pluton-st",
     "href": "https://www.lofty.ai/property_deal/10828-Pluton-St_Norwalk-CA-90650",
     "title": "10828 Pluton St",
-    "location": "Norwalk, CA 90650",
+    "location": "Lyon, 69002",
     "tags": [
       "Single Family",
       "Cash Flowing",
@@ -266,7 +266,7 @@ export const marketplaceProperties = [
     "slug": "1821-donetto-dr",
     "href": "https://www.lofty.ai/property_deal/1821-Donetto-Dr_Leander-TX-78641",
     "title": "1821 Donetto Dr",
-    "location": "Leander, TX 78641",
+    "location": "Marseille, 13008",
     "tags": [
       "Single Family",
       "Cash Flowing",
@@ -287,7 +287,7 @@ export const marketplaceProperties = [
     "slug": "3761-jade-ave",
     "href": "https://www.lofty.ai/property_deal/3761-Jade-Ave_Las-Cruces-NM-88012",
     "title": "3761 Jade Ave",
-    "location": "Las Cruces, NM 88012",
+    "location": "Nice, 06000",
     "tags": [
       "Vacation Rental",
       "Cash Flowing",
@@ -308,7 +308,7 @@ export const marketplaceProperties = [
     "slug": "230-seacrest-ln",
     "href": "https://www.lofty.ai/property_deal/230-Seacrest-Ln_Delray-Beach-FL-33444",
     "title": "230 Seacrest Ln",
-    "location": "Delray Beach, FL 33444",
+    "location": "Bordeaux, 33000",
     "tags": [
       "Vacation Rental"
     ],
@@ -327,7 +327,7 @@ export const marketplaceProperties = [
     "slug": "3427-sturdevant-st",
     "href": "https://www.lofty.ai/property_deal/3427-Sturdevant-St_Davenport-IA-52806",
     "title": "3427 Sturdevant St",
-    "location": "Davenport, IA 52806",
+    "location": "Toulouse, 31000",
     "tags": [
       "Single Family",
       "Cash Flowing"
@@ -347,7 +347,7 @@ export const marketplaceProperties = [
     "slug": "581-san-francisco-st",
     "href": "https://www.lofty.ai/property_deal/581-San-Francisco-St_Las-Cruces-NM-88001",
     "title": "581 San Francisco St",
-    "location": "Las Cruces, NM 88001",
+    "location": "Lille, 59000",
     "tags": [
       "Vacation Rental",
       "Cash Flowing",
@@ -368,7 +368,7 @@ export const marketplaceProperties = [
     "slug": "85-104-alawa-pl",
     "href": "https://www.lofty.ai/property_deal/85-104-Alawa-Pl_Waianae-HI-96792",
     "title": "85-104 Alawa Pl",
-    "location": "Waianae, HI 96792",
+    "location": "Nantes, 44000",
     "tags": [
       "Single Family"
     ],
@@ -387,7 +387,7 @@ export const marketplaceProperties = [
     "slug": "20-sederholm-path",
     "href": "https://www.lofty.ai/property_deal/20-Sederholm-Path_Palm-Coast-FL-32164",
     "title": "20 Sederholm Path",
-    "location": "Palm Coast, FL 32164",
+    "location": "Strasbourg, 67000",
     "tags": [
       "Single Family",
       "Cash Flowing",
@@ -408,7 +408,7 @@ export const marketplaceProperties = [
     "slug": "14018-arcadia-road-ne",
     "href": "https://www.lofty.ai/property_deal/14018-Arcadia-Road-NE_Albuquerque-NM-87123",
     "title": "14018 Arcadia Road NE",
-    "location": "Albuquerque, NM 87123",
+    "location": "Montpellier, 34000",
     "tags": [
       "Vacation Rental",
       "Cash Flowing"
@@ -428,7 +428,7 @@ export const marketplaceProperties = [
     "slug": "1048-hilton-rd",
     "href": "https://www.lofty.ai/property_deal/1048-Hilton-Rd_Cinnaminson-NJ-08077",
     "title": "1048 Hilton Rd",
-    "location": "Cinnaminson, NJ 08077",
+    "location": "Paris, 75008",
     "tags": [
       "Commercial",
       "Cash Flowing"
@@ -448,7 +448,7 @@ export const marketplaceProperties = [
     "slug": "516-e-2nd-st",
     "href": "https://www.lofty.ai/property_deal/516-E-2nd-St_The-Dalles-OR-97058",
     "title": "516 E 2nd St",
-    "location": "The Dalles, OR 97058",
+    "location": "Lyon, 69002",
     "tags": [
       "Commercial",
       "Cash Flowing"
@@ -468,7 +468,7 @@ export const marketplaceProperties = [
     "slug": "6117-hyde-flats-road-21",
     "href": "https://www.lofty.ai/property_deal/6117-Hyde-Flats-Road-21_Black-Creek-NY-14714",
     "title": "6117 Hyde Flats Road 21",
-    "location": "Black Creek, NY 14714",
+    "location": "Marseille, 13008",
     "tags": [
       "Commercial",
       "Cash Flowing"
@@ -488,7 +488,7 @@ export const marketplaceProperties = [
     "slug": "703-23rd-ave",
     "href": "https://www.lofty.ai/property_deal/703-23rd-Ave_Rock-Island-Illinois-61201",
     "title": "703 23rd Ave",
-    "location": "Rock Island, Illinois 61201",
+    "location": "Nice, 06000",
     "tags": [
       "Single Family",
       "Cash Flowing"
@@ -508,7 +508,7 @@ export const marketplaceProperties = [
     "slug": "5333-ponte-tresa-dr",
     "href": "https://www.lofty.ai/property_deal/5333-Ponte-Tresa-Dr_Austin-TX-78738",
     "title": "5333 Ponte Tresa Dr",
-    "location": "Austin, TX 78738",
+    "location": "Bordeaux, 33000",
     "tags": [
       "Single Family",
       "Cash Flowing",
@@ -529,7 +529,7 @@ export const marketplaceProperties = [
     "slug": "1415-race-st",
     "href": "https://www.lofty.ai/property_deal/1415-Race-St_Cincinnati-OH-45202",
     "title": "1415 Race St",
-    "location": "Cincinnati, OH 45202",
+    "location": "Toulouse, 31000",
     "tags": [
       "Multi Family",
       "Cash Flowing"
@@ -549,7 +549,7 @@ export const marketplaceProperties = [
     "slug": "8202-laurel-ave",
     "href": "https://www.lofty.ai/property_deal/8202-Laurel-Ave_Raytown-MO-64138",
     "title": "8202 Laurel Ave",
-    "location": "Raytown, MO 64138",
+    "location": "Lille, 59000",
     "tags": [
       "Single Family",
       "Cash Flowing"
@@ -569,7 +569,7 @@ export const marketplaceProperties = [
     "slug": "503-colorado-street-unit-4",
     "href": "https://www.lofty.ai/property_deal/503-Colorado-Street-Unit-4_Lawrence-KS-66044",
     "title": "503 Colorado Street Unit 4",
-    "location": "Lawrence, KS 66044",
+    "location": "Nantes, 44000",
     "tags": [
       "Vacation Rental",
       "Cash Flowing"
@@ -589,7 +589,7 @@ export const marketplaceProperties = [
     "slug": "110-gardengate-dr",
     "href": "https://www.lofty.ai/property_deal/110-Gardengate-Dr_Harvest-AL-35749",
     "title": "110 Gardengate Dr",
-    "location": "Harvest, AL 35749",
+    "location": "Strasbourg, 67000",
     "tags": [
       "Single Family",
       "Cash Flowing"
@@ -609,7 +609,7 @@ export const marketplaceProperties = [
     "slug": "999-canyon-rd",
     "href": "https://www.lofty.ai/property_deal/999-Canyon-Rd_Ogden-UT-84404",
     "title": "999 Canyon Rd",
-    "location": "Ogden, UT 84404",
+    "location": "Montpellier, 34000",
     "tags": [
       "Single Family",
       "Cash Flowing"

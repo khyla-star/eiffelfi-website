@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import LearnHeroSection from '../components/learn/LearnHeroSection';
 import LearnLayout from '../components/learn/LearnLayout';
 import CollectionGrid from '../components/learn/CollectionGrid';
 import { learnCollections } from '../data/learn';
@@ -40,7 +41,10 @@ export default function LearnPage() {
   }
 
   return (
-    <LearnLayout searchQuery={searchQuery} onSearchChange={handleSearchChange} paddedContent={false}>
+    <LearnLayout
+      hero={<LearnHeroSection searchQuery={searchQuery} onSearchChange={handleSearchChange} />}
+      paddedContent={false}
+    >
       <CollectionGrid collections={collections} />
     </LearnLayout>
   );

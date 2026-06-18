@@ -1,3 +1,4 @@
+import { getPropertyManager } from '../utils/marketplacePropertyMeta';
 import { marketplaceProperties } from './marketplace.generated';
 import type { MarketplaceProperty, MarketplacePropertyDetail, MarketplaceReview } from '../types/marketplace';
 
@@ -43,7 +44,7 @@ const DETAIL_OVERRIDES: Record<string, Partial<MarketplacePropertyDetail>> = {
     baths: 6,
     sqft: 4151,
     badges: ['Vacation Rental', 'Airbnb Listing'],
-    manager: 'ECO Systems LLC',
+    manager: 'Foncia Gestion',
     marketValue: '$672,487',
     fairValue: '$1,579,698',
     valuationLabel: '57% undervalued',
@@ -78,7 +79,7 @@ const DETAIL_OVERRIDES: Record<string, Partial<MarketplacePropertyDetail>> = {
   },
 };
 
-function hashSlug(slug: string) {
+function hashSlugLocal(slug: string) {
   let hash = 0;
   for (let i = 0; i < slug.length; i++) hash = (hash + slug.charCodeAt(i) * (i + 1)) % 9973;
   return hash;
@@ -89,7 +90,7 @@ function formatCurrency(value: number) {
 }
 
 function buildReviews(slug: string, count: number): MarketplaceReview[] {
-  const start = hashSlug(slug) % REVIEW_POOL.length;
+  const start = hashSlugLocal(slug) % REVIEW_POOL.length;
   const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
   return Array.from({ length: count }, (_, i) => {
@@ -102,7 +103,7 @@ function buildReviews(slug: string, count: number): MarketplaceReview[] {
 }
 
 function buildDetail(property: MarketplaceProperty): MarketplacePropertyDetail {
-  const hash = hashSlug(property.slug);
+  const hash = hashSlugLocal(property.slug);
   const price = parseFloat(property.tokenPrice.replace(/[$,]/g, '')) || 50;
   const yieldPct = parseFloat(property.yield.replace('%', '')) || 8;
   const undervaluedPct = parseFloat(property.undervalued.replace(/[^\d.]/g, '')) || 5 + (hash % 20);
@@ -122,7 +123,7 @@ function buildDetail(property: MarketplaceProperty): MarketplacePropertyDetail {
     baths: 1 + (hash % 4),
     sqft: 1200 + (hash % 30) * 100,
     badges,
-    manager: ['ECO Systems LLC', 'Lofty Homes', 'Atlas Property Group', 'Summit Rentals LLC'][hash % 4],
+    manager: getPropertyManager(property.slug),
     about: `${property.title} is a ${property.tags[0]?.toLowerCase() ?? 'residential'} investment on EiffelFi located in ${property.location}. This tokenized property lets investors earn rental income through fractional ownership with daily distributions and marketplace liquidity.`,
     marketValue: formatCurrency(marketNum),
     fairValue: formatCurrency(fairNum),

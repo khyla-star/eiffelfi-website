@@ -44,3 +44,391 @@
 .marketplace-filter-scroll::-webkit-scrollbar {
   display: none;
 }
+
+.marketplace-sort-select {
+  appearance: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  color: #1a1147;
+  padding: 0.375rem 2rem 0.375rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.25;
+  cursor: pointer;
+  outline: none;
+}
+
+.marketplace-sort-select:focus {
+  border-color: #7b61ff;
+  box-shadow: 0 0 0 2px rgba(123, 97, 255, 0.2);
+}
+
+.marketplace-sort-select option {
+  background-color: #ffffff;
+  color: #1a1147;
+}
+
+.dark .marketplace-sort-select {
+  border-color: rgba(255, 255, 255, 0.18);
+  background-color: #ffffff;
+  color: #1a1147;
+}
+
+.dark .marketplace-sort-select option {
+  background-color: #ffffff;
+  color: #1a1147;
+}
+
+.marketplace-sort-select__icon {
+  pointer-events: none;
+  position: absolute;
+  right: 0.625rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  color: #6b7280;
+}
+
+:root {
+  --marketplace-page-bg: #020724;
+}
+
+.dark #marketplace-landing {
+  --marketplace-page-bg: #020724;
+}
+
+.marketplace-page {
+  background-color: var(--marketplace-page-bg);
+  color: #ffffff;
+}
+
+#marketplace-landing {
+  background-color: var(--marketplace-page-bg);
+}
+
+.marketplace-toolbar {
+  position: relative;
+  z-index: 2;
+  overflow: visible;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--marketplace-page-bg);
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.marketplace-sticky-bar {
+  position: sticky;
+  top: var(--top-mkt-bar-offset, 64px);
+  z-index: 40;
+  overflow: visible;
+  background: var(--marketplace-page-bg);
+}
+
+.marketplace-stats-bar {
+  background: var(--marketplace-page-bg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.marketplace-grid-wrap {
+  background: var(--marketplace-page-bg);
+}
+
+.marketplace-toolbar__row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  overflow: visible;
+  padding: 0.75rem 1rem;
+}
+
+@media (min-width: 1024px) {
+  .marketplace-toolbar__row {
+    padding: 0.75rem 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .marketplace-toolbar__row {
+    padding: 0.75rem 4rem;
+  }
+}
+
+.marketplace-toolbar__primary {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  align-items: flex-start;
+  gap: 0.75rem;
+  overflow: visible;
+}
+
+.marketplace-toolbar__dropdowns {
+  display: flex;
+  flex-shrink: 0;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.marketplace-toolbar__tags {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  align-items: flex-start;
+  gap: 0.35rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+}
+
+.marketplace-toolbar__sort {
+  position: relative;
+  flex-shrink: 0;
+  padding-top: 0.15rem;
+}
+
+.marketplace-nav-dropdown {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.marketplace-nav-dropdown__trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(147, 131, 255, 0.35);
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.45rem 0.85rem;
+  color: #ffffff;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.marketplace-nav-dropdown__trigger:hover,
+.marketplace-nav-dropdown--open .marketplace-nav-dropdown__trigger {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(196, 184, 255, 0.45);
+}
+
+.marketplace-nav-dropdown__trigger-icon {
+  font-size: 0.875rem;
+  opacity: 0.95;
+}
+
+.marketplace-nav-dropdown__trigger-chevron {
+  font-size: 0.625rem;
+  opacity: 0.8;
+}
+
+.marketplace-nav-dropdown__panel {
+  overflow: hidden;
+  border: 1px solid rgba(123, 97, 255, 0.35);
+  border-radius: 0.85rem;
+  background: var(--marketplace-page-bg);
+  box-shadow: 0 18px 40px rgba(8, 4, 28, 0.45);
+}
+
+.marketplace-nav-dropdown__panel--portal {
+  position: fixed;
+  z-index: 100000;
+  background: var(--marketplace-page-bg);
+}
+
+.marketplace-invest-sidebar {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  background: var(--marketplace-page-bg);
+  color: #ffffff;
+  padding: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .marketplace-invest-sidebar {
+    padding: 1.5rem;
+  }
+}
+
+.marketplace-invest-sidebar__muted {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.marketplace-invest-sidebar__divider {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.marketplace-invest-sidebar__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #c4b8ff;
+}
+
+.marketplace-toolbar__divider {
+  width: 1px;
+  align-self: stretch;
+  flex-shrink: 0;
+  margin: 0.25rem 0.15rem;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.marketplace-nav-dropdown__search-wrap {
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--marketplace-page-bg);
+  padding: 0.75rem;
+}
+
+.marketplace-nav-dropdown__search-icon {
+  position: absolute;
+  left: 1.35rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.marketplace-nav-dropdown__search {
+  width: 100%;
+  border: 1px solid rgba(123, 97, 255, 0.35);
+  border-radius: 0.65rem;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.65rem 0.85rem 0.65rem 2.25rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.marketplace-nav-dropdown__search::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.marketplace-nav-dropdown__search:focus {
+  border-color: rgba(196, 184, 255, 0.55);
+  box-shadow: 0 0 0 2px rgba(123, 97, 255, 0.2);
+}
+
+.marketplace-nav-dropdown__list {
+  max-height: 18rem;
+  margin: 0;
+  padding: 0.35rem 0;
+  overflow-y: auto;
+  list-style: none;
+  background: var(--marketplace-page-bg);
+}
+
+.marketplace-nav-dropdown__list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.marketplace-nav-dropdown__list::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background: rgba(123, 97, 255, 0.45);
+}
+
+.marketplace-nav-dropdown__option {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 0.75rem;
+  border: 0;
+  background: transparent;
+  padding: 0.65rem 0.9rem;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.875rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.marketplace-nav-dropdown__option:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.marketplace-nav-dropdown__checkbox {
+  display: inline-flex;
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(123, 97, 255, 0.45);
+  border-radius: 0.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  color: #ffffff;
+  font-size: 0.625rem;
+}
+
+.marketplace-nav-dropdown__checkbox--checked {
+  border-color: transparent;
+  background: #b8adff;
+  color: #1a1147;
+}
+
+.marketplace-nav-dropdown__option-label {
+  flex: 1;
+  min-width: 0;
+}
+
+.marketplace-nav-dropdown__option-label--active {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.marketplace-nav-dropdown__option-count {
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.8125rem;
+}
+
+.marketplace-nav-tag {
+  display: inline-flex;
+  min-width: 4.75rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  border: 0;
+  background: transparent;
+  padding: 0.35rem 0.5rem;
+  color: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.marketplace-nav-tag:hover,
+.marketplace-nav-tag--active {
+  color: #ffffff;
+}
+
+.marketplace-nav-tag__icon {
+  font-size: 1.125rem;
+  line-height: 1;
+}
+
+.marketplace-nav-tag__label {
+  max-width: 5.5rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  line-height: 1.15;
+  text-align: center;
+}
+
+@media (max-width: 1023px) {
+  .marketplace-toolbar__divider {
+    display: none;
+  }
+
+  .marketplace-toolbar__sort {
+    display: none;
+  }
+}

@@ -20,7 +20,7 @@ export default function MarketplaceGrid({
   const canShowLess = visibleCount > MARKETPLACE_INITIAL_VISIBLE;
 
   return (
-    <div className="bg-white px-6 dark:bg-lofty-purple-800 sm:px-12 lg:px-16">
+    <div className="marketplace-grid-wrap px-6 sm:px-12 lg:px-16">
       <h2 className="sr-only">Available investment properties</h2>
 
       {visible.length === 0 ? (

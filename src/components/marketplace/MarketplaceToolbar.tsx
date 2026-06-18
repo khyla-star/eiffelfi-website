@@ -1,5 +1,16 @@
+import { useMemo, useState } from 'react';
 import type { MarketplaceSortOption } from '../../types/marketplace';
-import { MARKETPLACE_FILTERS } from '../../data/marketplace';
+import {
+  FRENCH_MARKET_CITIES,
+  MARKETPLACE_ALL_MANAGERS_ID,
+  MARKETPLACE_ALL_MARKETS_ID,
+  MARKETPLACE_TAG_FILTERS,
+} from '../../data/marketplaceNav';
+import { marketplaceProperties } from '../../data/marketplace.generated';
+import type { MarketplaceFilterState } from '../../utils/marketplaceFilters';
+import { getDropdownButtonLabel, getManagerCounts } from '../../utils/marketplaceFilters';
+import { MARKETPLACE_MANAGERS } from '../../utils/marketplacePropertyMeta';
+import MarketplaceFilterDropdown from './MarketplaceFilterDropdown';
 
 const SORT_OPTIONS: MarketplaceSortOption[] = [
   'Default',
@@ -9,84 +20,123 @@ const SORT_OPTIONS: MarketplaceSortOption[] = [
 ];
 
 type MarketplaceToolbarProps = {
-  activeFilter: string;
+  filters: MarketplaceFilterState;
   sortBy: MarketplaceSortOption;
-  onFilterChange: (filter: string) => void;
+  onFiltersChange: (filters: MarketplaceFilterState) => void;
   onSortChange: (sort: MarketplaceSortOption) => void;
 };
 
 export default function MarketplaceToolbar({
-  activeFilter,
+  filters,
   sortBy,
-  onFilterChange,
+  onFiltersChange,
   onSortChange,
 }: MarketplaceToolbarProps) {
+  const [openDropdown, setOpenDropdown] = useState<'markets' | 'managers' | null>(null);
+
+  const managerCounts = useMemo(() => getManagerCounts(marketplaceProperties), []);
+  const managerOptions = useMemo(
+    () =>
+      MARKETPLACE_MANAGERS.map((manager) => ({
+        id: manager,
+        label: manager,
+        count: managerCounts.get(manager) ?? 0,
+      })).filter((option) => option.count > 0),
+    [managerCounts],
+  );
+
+  const marketsLabel = getDropdownButtonLabel(
+    MARKETPLACE_ALL_MARKETS_ID,
+    'All Markets',
+    filters.selectedMarkets,
+    FRENCH_MARKET_CITIES,
+  );
+
+  const managersLabel = getDropdownButtonLabel(
+    MARKETPLACE_ALL_MANAGERS_ID,
+    'All Managers',
+    filters.selectedManagers,
+    managerOptions,
+  );
+
+  function updateFilters(partial: Partial<MarketplaceFilterState>) {
+    onFiltersChange({ ...filters, ...partial });
+  }
+
+  function toggleTag(tagId: string) {
+    updateFilters({
+      activeTag: filters.activeTag === tagId ? null : tagId,
+    });
+  }
+
   return (
-    <section
-      className="z-40 border-b border-gray-100 bg-white dark:border-transparent dark:bg-lofty-purple-800"
-      style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}
-    >
-      <div className="hidden w-full justify-center bg-transparent px-8 py-3 lg:flex xl:px-16">
-        <div className="flex w-full flex-1 items-center justify-between gap-4">
-          <div className="marketplace-filter-scroll flex min-w-0 flex-1 items-center gap-2 overflow-x-auto">
-            {MARKETPLACE_FILTERS.map((filter) => {
-              const active = activeFilter === filter;
+    <section className="marketplace-toolbar">
+      <div className="marketplace-toolbar__row">
+        <div className="marketplace-toolbar__primary">
+          <div className="marketplace-toolbar__dropdowns">
+            <MarketplaceFilterDropdown
+            label={marketsLabel}
+            icon="fa-location-dot"
+            allOption={{ id: MARKETPLACE_ALL_MARKETS_ID, label: 'All Markets' }}
+            options={FRENCH_MARKET_CITIES}
+            selected={filters.selectedMarkets}
+            searchPlaceholder="Search markets..."
+            isOpen={openDropdown === 'markets'}
+            onToggle={() => setOpenDropdown((current) => (current === 'markets' ? null : 'markets'))}
+            onClose={() => setOpenDropdown(null)}
+            onChange={(selectedMarkets) => updateFilters({ selectedMarkets })}
+          />
+
+          <MarketplaceFilterDropdown
+            label={managersLabel}
+            icon="fa-user-tie"
+            allOption={{ id: MARKETPLACE_ALL_MANAGERS_ID, label: 'All Property Managers' }}
+            options={managerOptions}
+            selected={filters.selectedManagers}
+            searchPlaceholder="Search property managers..."
+            isOpen={openDropdown === 'managers'}
+            onToggle={() => setOpenDropdown((current) => (current === 'managers' ? null : 'managers'))}
+            onClose={() => setOpenDropdown(null)}
+            onChange={(selectedManagers) => updateFilters({ selectedManagers })}
+            />
+          </div>
+
+          <div className="marketplace-toolbar__divider" aria-hidden="true" />
+
+          <div className="marketplace-filter-scroll marketplace-toolbar__tags">
+            {MARKETPLACE_TAG_FILTERS.map((tag) => {
+              const active = filters.activeTag === tag.id;
               return (
                 <button
-                  key={filter}
+                  key={tag.id}
                   type="button"
-                  onClick={() => onFilterChange(filter)}
-                  className={`whitespace-nowrap rounded-full px-3.5 py-1.5 text-xs font-medium transition-colors ${
-                    active
-                      ? 'bg-lofty-purple-700 text-white dark:bg-white/15 dark:text-white'
-                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-white/5 dark:text-white/60 dark:hover:bg-white/10 dark:hover:text-white/80'
-                  }`}
+                  className={`marketplace-nav-tag${active ? ' marketplace-nav-tag--active' : ''}`}
+                  onClick={() => toggleTag(tag.id)}
+                  aria-pressed={active}
                 >
-                  {filter}
+                  <i className={`fal ${tag.icon} marketplace-nav-tag__icon`} aria-hidden="true" />
+                  <span className="marketplace-nav-tag__label">{tag.label}</span>
                 </button>
               );
             })}
           </div>
-
-          <div className="relative shrink-0">
-            <select
-              value={sortBy}
-              onChange={(e) => onSortChange(e.target.value as MarketplaceSortOption)}
-              aria-label="Sort properties"
-              className="appearance-none rounded-lg border border-gray-200 bg-white py-1.5 pl-3 pr-8 text-xs font-medium text-gray-700 dark:border-white/10 dark:bg-white/5 dark:text-white/80"
-            >
-              {SORT_OPTIONS.map((option) => (
-                <option key={option} value={option}>
-                  {option}
-                </option>
-              ))}
-            </select>
-            <i
-              className="fas fa-chevron-down pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] text-gray-400"
-              aria-hidden="true"
-            />
-          </div>
         </div>
-      </div>
 
-      <div className="marketplace-filter-scroll flex items-center gap-2 overflow-x-auto px-4 py-2.5 lg:hidden">
-        {MARKETPLACE_FILTERS.map((filter) => {
-          const active = activeFilter === filter;
-          return (
-            <button
-              key={filter}
-              type="button"
-              onClick={() => onFilterChange(filter)}
-              className={`shrink-0 whitespace-nowrap rounded-full px-3 py-1.5 text-xs font-medium transition-colors ${
-                active
-                  ? 'bg-lofty-purple-700 text-white dark:bg-white/15 dark:text-white'
-                  : 'bg-gray-100 text-gray-600 dark:bg-white/5 dark:text-white/60'
-              }`}
-            >
-              {filter}
-            </button>
-          );
-        })}
+        <div className="marketplace-toolbar__sort">
+          <select
+            value={sortBy}
+            onChange={(event) => onSortChange(event.target.value as MarketplaceSortOption)}
+            aria-label="Sort properties"
+            className="marketplace-sort-select"
+          >
+            {SORT_OPTIONS.map((option) => (
+              <option key={option} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+          <i className="fas fa-chevron-down marketplace-sort-select__icon" aria-hidden="true" />
+        </div>
       </div>
     </section>
   );

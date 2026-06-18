@@ -1,6 +1,6 @@
 import { Navigate, useParams } from 'react-router-dom';
 import LearnLayout from '../components/learn/LearnLayout';
-import LearnBreadcrumbs from '../components/learn/LearnBreadcrumbs';
+import LearnSubpageHero from '../components/learn/LearnSubpageHero';
 import { getArticleBySlug, getCollectionForArticle } from '../data/learn/helpers';
 
 export default function LearnArticlePage() {
@@ -13,18 +13,20 @@ export default function LearnArticlePage() {
   }
 
   return (
-    <LearnLayout>
-      <LearnBreadcrumbs
-        items={[
-          { label: 'All Collections', to: '/help' },
-          { label: collection.title, to: collection.to },
-          { label: article.title },
-        ]}
-      />
+    <LearnLayout
+      hero={
+        <LearnSubpageHero
+          title={article.title}
+          subtitle={collection.title}
+          breadcrumbs={[
+            { label: 'All Collections', to: '/help' },
+            { label: collection.title, to: collection.to },
+            { label: article.title },
+          ]}
+        />
+      }
+    >
       <article>
-        <h1 className="mb-8 text-3xl font-bold leading-tight text-body-primary-color sm:text-4xl">
-          {article.title}
-        </h1>
         <div className="space-y-5 text-base leading-7 text-body-primary-color">
           {article.body.map((paragraph) => (
             <p key={paragraph.slice(0, 48)} className="m-0">
