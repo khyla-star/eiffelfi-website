@@ -42,7 +42,7 @@ export default function LearnHeader({ searchQuery = '', onSearchChange }: LearnH
                 <div className="header__site_name">
                   <div className="header__logo">
                     <LocalLink to="/help">
-                      <img src={learnPage.logo} height={181} alt={learnPage.siteName} />
+                      <img src={learnPage.logo} alt={learnPage.siteName} className="h-8 w-auto" />
                     </LocalLink>
                   </div>
                 </div>

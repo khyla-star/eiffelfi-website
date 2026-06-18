@@ -1,4 +1,5 @@
 import LocalLink from '../common/LocalLink';
+import Logo from '../common/Logo';
 import SocialLinks from '../ui/SocialLinks';
 import FooterCityLinks from './FooterCityLinks';
 import FooterDisclosures from './FooterDisclosures';
@@ -13,12 +14,7 @@ export default function Footer() {
       <div className="mx-auto w-full max-w-[1280px] px-6 lg:px-12">
         <div className="grid grid-cols-1 gap-12 pb-12 pt-20 lg:grid-cols-12 lg:gap-12 lg:pb-16 lg:pt-24">
           <div className="lg:col-span-4">
-            <img
-              src="/assets/logo-bottom.24e659c8d6a2183b3bb6de0c812a775f.svg"
-              width={120}
-              alt="EiffelFi"
-              className="h-8 w-auto"
-            />
+            <Logo variant="dark" className="h-8 w-auto" />
             <p className="mt-6 max-w-[320px] text-base leading-7 text-white/70">{footer.tagline}</p>
             <div className="mt-10">
               <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-white/50">

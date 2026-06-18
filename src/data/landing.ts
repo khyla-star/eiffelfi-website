@@ -11,10 +11,13 @@ import type {
 } from '../types/content';
 import { marketplaceTicker } from './marketplaceTicker';
 
+import { brandLogo } from './brand';
+
 export const navigation = {
   logo: {
-    light: '/assets/logo-light.ff9fcbf0916e664961e966b23ce0dcc5.svg',
-    dark: '/assets/logo-dark.26f6d49d3601bfad47d27f20d1ff4d10.svg',
+    light: brandLogo.light,
+    dark: brandLogo.dark,
+    icon: brandLogo.icon,
   },
   primary: [
     { label: 'Invest', to: '/marketplace' },

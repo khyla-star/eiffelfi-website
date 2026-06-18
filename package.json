@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "extract": "node scripts/extract-assets.mjs",
+    "extract:about-logos": "node scripts/extract-about-logos.mjs",
+    "extract:marketplace": "node scripts/extract-marketplace.mjs",
     "generate:learn": "node scripts/generate-learn-articles.mjs",
     "lint": "eslint src && tsc",
     "build": "vite build",

@@ -1,10 +1,11 @@
 import type { LearnCollection, LearnSocialLink } from '../types/learn';
+import { brandLogo } from './brand';
 
 export const learnPage = {
   siteName: 'EiffelFi Learning Center',
   title: 'Everything You Need to Succeed with EiffelFi',
   searchPlaceholder: 'Search for articles...',
-  logo: '/assets/learn/learn-logo.png',
+  logo: brandLogo.dark,
 };
 
 export const learnCollections: LearnCollection[] = [
