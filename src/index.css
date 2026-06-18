@@ -45,10 +45,33 @@ body {
 .site-toast {
   position: fixed;
   right: 1.5rem;
-  bottom: 1.5rem;
   z-index: 99999;
   pointer-events: none;
   max-width: min(24rem, calc(100vw - 2rem));
+}
+
+.site-toast--bottom-right {
+  bottom: 1.5rem;
+}
+
+.site-toast--top-right {
+  top: 5rem;
+}
+
+@keyframes toastSlideInTop {
+  from {
+    opacity: 0;
+    transform: translateX(1.25rem) translateY(-0.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.site-toast--top-right .site-toast__panel {
+  animation: toastSlideInTop 0.35s ease-out;
 }
 
 .site-toast__panel {
@@ -120,9 +143,14 @@ body {
 }
 
 @media (min-width: 640px) {
-  .site-toast {
+  .site-toast--bottom-right {
     right: 2rem;
     bottom: 2rem;
+  }
+
+  .site-toast--top-right {
+    right: 2rem;
+    top: 5.25rem;
   }
 }
 

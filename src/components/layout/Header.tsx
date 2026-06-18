@@ -8,7 +8,7 @@ import { navigation } from '../../data/landing';
 
 export const HEADER_HEIGHT_CLASS = 'h-16';
 
-const WALLET_NOTICE = 'Please Connect Wallet first.';
+const SITE_MODIFICATION_NOTICE = 'The site is currently being modified.';
 
 export default function Header() {
   const { primary, connectWallet } = navigation;
@@ -38,7 +38,7 @@ export default function Header() {
   }, [menuOpen]);
 
   function handleConnectWallet() {
-    setWalletNotice(WALLET_NOTICE);
+    setWalletNotice(SITE_MODIFICATION_NOTICE);
   }
 
   function closeMenu() {
@@ -108,7 +108,13 @@ export default function Header() {
       </header>
       <div className={HEADER_HEIGHT_CLASS} aria-hidden="true" />
       {mobileMenu}
-      <Toast message={walletNotice} onDismiss={() => setWalletNotice(null)} />
+      <Toast
+        message={walletNotice}
+        onDismiss={() => setWalletNotice(null)}
+        placement="top-right"
+        title="Notice"
+        iconClassName="fas fa-screwdriver-wrench"
+      />
     </>
   );
 }
