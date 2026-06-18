@@ -1,5 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import ScrollToTop from './components/common/ScrollToTop';
+import { SiteNoticeProvider } from './context/SiteNoticeContext';
 import LandingPage from './pages/LandingPage';
 import AboutPage from './pages/AboutPage';
 import LearnPage from './pages/LearnPage';
@@ -12,8 +13,9 @@ import PlaceholderPage from './pages/PlaceholderPage';
 export default function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop />
-      <Routes>
+      <SiteNoticeProvider>
+        <ScrollToTop />
+        <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/team" element={<Navigate to="/about" replace />} />
@@ -23,7 +25,8 @@ export default function App() {
         <Route path="/help/collections/:slug" element={<LearnCollectionPage />} />
         <Route path="/help/articles/:slug" element={<LearnArticlePage />} />
         <Route path="*" element={<PlaceholderPage />} />
-      </Routes>
+        </Routes>
+      </SiteNoticeProvider>
     </BrowserRouter>
   );
 }

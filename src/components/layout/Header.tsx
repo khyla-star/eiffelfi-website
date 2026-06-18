@@ -3,17 +3,15 @@ import { createPortal } from 'react-dom';
 import LocalLink from '../common/LocalLink';
 import Logo from '../common/Logo';
 import PrimaryNav from './PrimaryNav';
-import Toast from '../ui/Toast';
+import { useSiteNotice } from '../../context/SiteNoticeContext';
 import { navigation } from '../../data/landing';
 
 export const HEADER_HEIGHT_CLASS = 'h-16';
 
-const SITE_MODIFICATION_NOTICE = 'The site is currently being modified.';
-
 export default function Header() {
   const { primary, connectWallet } = navigation;
+  const { showSiteModificationNotice } = useSiteNotice();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [walletNotice, setWalletNotice] = useState<string | null>(null);
 
   useEffect(() => {
     if (!menuOpen) {
@@ -36,10 +34,6 @@ export default function Header() {
       document.removeEventListener('keydown', handleEscape);
     };
   }, [menuOpen]);
-
-  function handleConnectWallet() {
-    setWalletNotice(SITE_MODIFICATION_NOTICE);
-  }
 
   function closeMenu() {
     setMenuOpen(false);
@@ -90,7 +84,7 @@ export default function Header() {
           />
 
           <div className="site-header__actions">
-            <button type="button" className="site-header__cta" onClick={handleConnectWallet}>
+            <button type="button" className="site-header__cta" onClick={showSiteModificationNotice}>
               {connectWallet.label}
             </button>
             <button
@@ -108,13 +102,6 @@ export default function Header() {
       </header>
       <div className={HEADER_HEIGHT_CLASS} aria-hidden="true" />
       {mobileMenu}
-      <Toast
-        message={walletNotice}
-        onDismiss={() => setWalletNotice(null)}
-        placement="top-right"
-        title="Notice"
-        iconClassName="fas fa-screwdriver-wrench"
-      />
     </>
   );
 }
